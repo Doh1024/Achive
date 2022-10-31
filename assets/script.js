@@ -17,6 +17,7 @@ const listWords = () =>
       str += " " + nouns[i] + ",";
     }   
   }
+  document.getElementById('words').innerHTML = "My favourite pets are the" + str + ".";
   console.log("My favourite pets are the" + str + ".");
 }
 listWords();
