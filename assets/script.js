@@ -38,3 +38,10 @@ const spongeBob = () => {
   document.getElementById('display').innerHTML = str;
   str = "";
 }
+
+//character counter
+let text = document.getElementById('the-textarea');
+text.addEventListener("input", () => {
+  let count = text.value.length;
+  document.getElementById('current').innerHTML = `${count}`;
+})
